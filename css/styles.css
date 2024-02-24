@@ -128,6 +128,7 @@ p {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list :hover,
@@ -135,12 +136,13 @@ p {
   color: #404bbf;
 }
 
-/*
-.nav-list-link .decoration {
+.current {
   position: relative;
+  color: #404bbf;
 }
 
-.nav-list-link .decoration::after {
+.current::after {
+  content: "";
   position: absolute;
   width: 100%;
   left: 0;
@@ -149,7 +151,6 @@ p {
   background-color: #404bbf;
   border-radius: 2px;
 }
-*/
 
 .address {
   margin-left: auto;
@@ -169,6 +170,7 @@ p {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-link:hover,
@@ -190,6 +192,7 @@ p {
   background-size: cover;
   background-position: center center;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .page-title-item {
@@ -253,6 +256,17 @@ p {
   width: calc((100% - 72px) / 4);
 }
 
+.description-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+  height: 112px;
+}
+
 .description-item-name {
   text-align: start;
   margin-bottom: 8px;
@@ -295,7 +309,6 @@ p {
 
 .team-item-name {
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .team-item-text {
@@ -358,6 +371,7 @@ p {
 
 .portfolio-item-img {
   max-width: 360px;
+  height: 300px;
 }
 
 .portfolio-item-name {
@@ -365,10 +379,40 @@ p {
   margin-bottom: 8px;
   text-align: start;
 }
+
 .portfolio-item-text {
   max-width: 360px;
   margin-bottom: 8px;
   text-align: start;
+}
+
+.portfolio-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
+}
+
+.container-owerlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.owerlay-box {
+  position: absolute;
+  background: #4d5ae5;
+  color: #f4f4fd;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 /*=== Portfolio ===*/
 
