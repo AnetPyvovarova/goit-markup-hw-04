@@ -295,7 +295,7 @@ p {
 }
 
 .row-social {
-  padding-bottom: 32px;
+  padding: 32px 0px;
 }
 
 .team-item {
@@ -402,6 +402,10 @@ p {
   overflow: hidden;
 }
 
+.container-owerlay:hover {
+  transform: translateY(0%);
+}
+
 .owerlay-box {
   position: absolute;
   background: #4d5ae5;
@@ -413,6 +417,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
+  padding: 40px 32px;
 }
 /*=== Portfolio ===*/
 
@@ -459,6 +464,7 @@ p {
 .footer-social-header {
   margin-bottom: 16px;
   color: #fff;
+  font-weight: 500;
 }
 
 .footer-social-list {
