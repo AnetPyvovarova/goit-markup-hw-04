@@ -304,6 +304,7 @@ p {
 
 .team-item-name {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-item-text {
